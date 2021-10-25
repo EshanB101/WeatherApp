@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Righteous&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", cursive;
+  color: #fff;
+}
+body {
+  background: linear-gradient(to right, #373b44, #4286f4);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 10vh auto;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  margin-top: 50px;
+}
+.temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.temp .temp-display {
+  display: flex;
+  margin: 50px 0;
+}
+span {
+  font-size: 1.5em;
+}
+.temp-description {
+  font-size: 2em;
+}

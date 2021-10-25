@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Thimphu Weather and Activity App</h1>
+    <div class="container">
+      <div class="location">
+        <h1 class="location-timezone">----</h1>
+        <canvas class="icon" width="128" height="128"></canvas>
+      </div>
+      <div class="temp">
+        <div class="temp-display">
+          <h2 class="temp-value">-</h2>
+          <span>&nbsp; °C</span>
+        </div>
+        <div class="temp-description">-</div>
+      </div>
+      <div class="activity">
+        <button type="button" class="btn btn-primary">
+          Activity Suggestion
+        </button>
+        <div class="activity"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="skycons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
