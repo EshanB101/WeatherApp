@@ -10,7 +10,7 @@ window.addEventListener('load', ()=>{
     .then(response => response.json())
     .then(data => {
 
-        console.log(data.currentConditions)
+        console.log(data)
         //DOM
         const {temp,conditions,icon} = data.currentConditions;
         // temperature.textContent = temp;
@@ -18,7 +18,7 @@ window.addEventListener('load', ()=>{
         timeZone.textContent = data.resolvedAddress;
 
         farToDeg(temp)
-        setIcons(icon, document.querySelector('.icon'))
+        setIcons(icon)
 
         //activity suggest
         //[https://github.com/visualcrossing/WeatherApi/blob/master/lang/en.txt] here for all condition
@@ -68,11 +68,11 @@ window.addEventListener('load', ()=>{
         }
 
     //from skycons documentation
-    function setIcons(icon, iconID){
+    function setIcons(icon){
         let skycons = new Skycons({"color": "white"});
         let currentIcon = icon.replace(/-/g, "_").toUpperCase();        //replace - with _ cuz icon name in api and uupperCase as in skycons
         skycons.play();
         
-        return skycons.set(iconID, Skycons[currentIcon])
+        return skycons.set('icon1', Skycons[currentIcon])
     }
 })
